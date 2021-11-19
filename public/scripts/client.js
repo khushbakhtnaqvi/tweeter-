@@ -62,9 +62,9 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  
+
   // Toggle new tweet form on click
-  $("#newTweet").click(function(){
+  $("#newTweet").click(function () {
     $("#frmTweet").toggle(2000);
   });
 
@@ -76,20 +76,20 @@ $(document).ready(function () {
     if (!$("#tweet-text").val()) {
       $("#errorMessage").html("Tweet is empty!");
       $("#alert1").slideDown();
-      setTimeout(function(){ $("#alert1").slideUp(); }, 3000);
+      setTimeout(function () { $("#alert1").slideUp(); }, 3000);
       return;
     }
-    
+
     // Check if tweet size is more than 140 characters
     if ($("#tweet-text").val().length > 140) {
       $("#errorMessage").html("Your tweet message is too long");
       $("#alert1").slideDown();
-      setTimeout(function(){ $("#alert1").slideUp(); }, 3000);
+      setTimeout(function () { $("#alert1").slideUp(); }, 3000);
       return;
     }
-    
+
     let url = '';
-    if (false){ 
+    if (false) {
       err;
     } else {
       url = "/tweets/";
@@ -98,17 +98,17 @@ $(document).ready(function () {
     // Serialize form data    
     const formData = $("#frmTweet").serialize();
 
-      // Ajax request for updating/posting tweets
-      $.ajax({
-        url: url,
-        method: "POST",
-        data: formData
-      }).then((result) => {
-        loadLastTweet();
-        $("#tweet-text").val("");
-      });
-    
-    
+    // Ajax request for updating/posting tweets
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: formData
+    }).then((result) => {
+      loadLastTweet();
+      $("#tweet-text").val("");
+    });
+
+
   });
 
   // Load last submitted tweet fron the database to the tweet container
@@ -118,7 +118,7 @@ $(document).ready(function () {
       method: 'GET',
       dataType: 'json',
       success: (tweets) => {
-        renderTweets([tweets[tweets.length-1]]);
+        renderTweets([tweets[tweets.length - 1]]);
       },
       error: (err) => {
         console.log(err);
