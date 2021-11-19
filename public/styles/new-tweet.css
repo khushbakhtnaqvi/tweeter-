@@ -1,0 +1,195 @@
+/* Class for new tweet */
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tweet input box */
+#tweet-text {
+width: 72rem;
+background-color: inherit;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 5px solid rgba(0, 0, 0, 0.700);
+}
+
+/* Class for submit tweet button */
+.but {
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* Class for counter */
+.count {
+  font-family: 'Bungee', cursive;
+  color: rgba(0, 0, 0, 0.700);
+}
+
+/* Class for tweets border */
+.bor {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+/* Class for timeago and counter to maintain space between */
+.button-count {
+  display: flex;
+  width: 72rem;
+  justify-content: space-between;
+}
+
+/* Tweet content in tweets */
+#tweeted {
+width: 100%;
+border-bottom: 5px solid rgba(0, 0, 0, 0.700);
+padding-bottom: 15px;
+padding-top: 30px;
+}
+
+/* Class for article footer */
+.article-footer {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  justify-content: space-between;
+}
+
+/*Class for article header */
+.article-header {
+  display: flex;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  justify-content: space-between;
+}
+
+/*Class for main article content */
+.article-main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+/* Class for avatar */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;  
+}
+
+/* Class for tweeter's name */
+.name {
+  padding-left: 10px;
+  padding-top: 80px;
+}
+
+/* Class for div containing article, article header and article footer */
+.divi {
+  border: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+/* Class for tweets container */
+.tweets-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+/* For color of icons */
+.color {
+  color: #4056A1;
+}
+
+/* For color change on hover for icons */
+i.color:hover {
+  color: 	#D7BE69;
+}
+
+/* For box shadow upon hover on tweet box */
+.divi:hover {
+  box-shadow: 3px  5px   darkolivegreen;
+}
+
+/* For color of handle */
+.handle {
+  color: 	#03000034;
+  padding-top: 15px;
+}
+
+/* No display of form initially */
+#frmTweet {
+  display: none;
+}
+
+/* Class for showing Error */
+.alert {
+  padding: 20px;
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: 2px solid;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+  display: none;
+  color: #D8000C;
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+/* Close button on error message */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Close button color change on hover */
+.closebtn:hover {
+  color: black;
+}
+
+/* For screen sizes over 768px */
+@media only screen and (min-width: 768px) {
+  
+  /* Class for tweets container */
+  .tweets-container {
+    display: flex;
+    width: 80rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  /* Class for new tweet */
+
+  .new-tweet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+    padding-left: 30px;
+  }
+  
+}

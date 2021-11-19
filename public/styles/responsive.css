@@ -1,0 +1,72 @@
+/* @media only screen and (min-width: 768px) {
+  
+  .tweets-container {
+    display: flex;
+    width: 80rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .new-tweet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+    padding-left: 30px;
+  }
+  
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+  }
+
+  .header { 
+    display: flex;
+    height: 8px;
+    width: 16%;
+    margin-top: 220px;
+    padding-top: 200px;
+    flex-direction: column;
+    background-color: orange;
+    justify-content:flex-end;
+    align-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+  }
+
+  .img {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    width: 8rem; 
+    height: 8rem;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin-top: -120px;
+    margin-bottom: -5px;
+  }
+
+  .nav {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .write {
+    display: inline;
+  }
+
+} */

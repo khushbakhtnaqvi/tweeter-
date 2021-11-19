@@ -1,0 +1,74 @@
+/* Class for header */
+.header { 
+  display: flex;
+  height: 400px;
+  width: 100%;
+  padding-top: 150px;
+  flex-direction: column;
+  background-color: orange;
+  justify-content:flex-end;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+/* Class for image in header */
+.img {
+  width: 200px; 
+  height: 200px;
+}
+
+/* Class for profile name */
+.name {
+  margin-top: -150px;
+  margin-bottom: -5px;
+}
+
+
+/* For screen sizes over 768px */
+@media only screen and (min-width: 768px) {
+
+  /* Class for bringing header on the left side of tweet container upon increase of screen size */
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+  }
+
+  /* Class for header */
+  .header { 
+    display: flex;
+    height: 8px;
+    width: 16%;
+    margin-top: 220px;
+    padding-top: 200px;
+    flex-direction: column;
+    background-color: orange;
+    justify-content:flex-end;
+    align-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+  }
+
+  /* Class for image in header */
+  .img {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    width: 8rem; 
+    height: 8rem;
+  }
+
+  /* Class for profile name */
+  .name {
+    font-size: 1rem;
+    margin-top: -120px;
+    margin-bottom: -5px;
+  }
+}
+
+
+
+
+
+

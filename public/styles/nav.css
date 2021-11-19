@@ -1,0 +1,79 @@
+/* Class for nav bar */
+.nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: orange;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  color: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Font for nav bar */
+.font-nav {
+font-family: 'Bungee', cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 40px;
+padding-bottom: 30px;
+}
+
+/* Class for arrow in nav bar */
+.arrow {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+/* hover for arrow */
+i.arrow:hover {
+  color: 	#D7BE69;
+}
+
+/* for ul in nav */
+ul {
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+}
+
+/* class for div containing ul in nav bar*/
+.write {
+  display: flex;
+  flex-direction: column;
+}
+
+/* For having one element over other */
+.stack-top{
+  z-index: 1;
+}
+
+/* For screen sizes over 768px */
+@media only screen and (min-width: 768px) {
+  
+  /* Class for nav bar */
+  .nav {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  /* class for div containing ul in nav bar*/
+  .write {
+    display: inline;
+  }
+}

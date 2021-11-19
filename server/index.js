@@ -32,6 +32,10 @@ const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 // Mount the tweets routes at the "/tweets" path prefix:
 app.use("/tweets", tweetsRoutes);
 
+// tweetsRoutes.get("*", function(req, res) {
+//   res.status(404).send("Page Does Not Exist !!!");
+// });
+
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
